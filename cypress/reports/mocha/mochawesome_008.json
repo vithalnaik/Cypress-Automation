@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-09-06T07:01:25.225Z",
+    "end": "2021-09-06T07:01:25.460Z",
+    "duration": 235,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bd10d0e1-2255-472a-8deb-c8d34043d837",
+      "title": "",
+      "fullFile": "cypress/integration/productDetailsTest/ProductDetailTest.js",
+      "file": "cypress/integration/productDetailsTest/ProductDetailTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ff0e06e5-af2d-437b-9847-0ab8decd6dc2",
+          "title": "Verify Product Details Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify kickback Pack product Details",
+              "fullTitle": "Verify Product Details Page Verify kickback Pack product Details",
+              "timedOut": null,
+              "duration": 158,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/productDetailsTest/ProductDetailTest.js/Verify Product Details Page -- Verify kickback Pack product Details (failed).png\"",
+              "code": "console.log('vithal');\ncy.log('vithal');\ncy.task('getFiles', 'cypress/fixtures/productDetails').then(files => {\n  cy.log(files);\n});\nthrow new Error('Error Failed');\ncy.log('vithal'); // const kickbackPackDetails = require('../../fixtures/productDetails/kickbackPack.json')\n// //visit kickbackPack product detail page\n// cy.visit(kickbackPackDetails.url)\n// //verify kickback Pack Details\n// productDetailPageVerification.verifyProductDetails(kickbackPackDetails)\n// //Add to cart multi quantity\n// productDetailPageTask.clickOnAddToCart()\n// //verify the success message for Add to cart fuctionality(Not able to view the message during test run)\n// productDetailPageVerification.verifyAddtoCartSuccessMessage(\"Product successfully added to cart\")\n// //verify view cart count \n// productDetailPageVerification.verifyCartCount(\"1\")\n// //click on view cart link\n// productDetailPageTask.clickOnViewCartLink()\n// //verify details on shoppingCart\n// shoppingCartPageVerification.verifyProductDetails(kickbackPackDetails.addToCartDetails)\n// //delete item from cart\n// shoppingCartPageTask.deleteProductFromCart()\n// //verify Empty shopping cart\n// shoppingCartPageVerification.verifyEmptyShoppingCart()",
+              "err": {
+                "message": "Error: Error Failed",
+                "estack": "Error: Error Failed\n    at Context.eval (https://demo.grassdoor.com/__cypress/tests?p=cypress\\integration\\productDetailsTest\\ProductDetailTest.js:141:11)",
+                "diff": null
+              },
+              "uuid": "ca6b9531-0d20-44e7-bc95-4cdc3506f43d",
+              "parentUUID": "ff0e06e5-af2d-437b-9847-0ab8decd6dc2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ca6b9531-0d20-44e7-bc95-4cdc3506f43d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 158,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

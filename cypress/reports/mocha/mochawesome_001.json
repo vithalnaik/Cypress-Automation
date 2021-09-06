@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-09-04T19:45:10.204Z",
+    "end": "2021-09-04T19:45:29.388Z",
+    "duration": 19184,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "dfd59d7b-ea14-4544-a636-6befb857faaf",
+      "title": "",
+      "fullFile": "cypress/integration/couponTest/CouponModuleTest.js",
+      "file": "cypress/integration/couponTest/CouponModuleTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0e1bb43f-4c1b-46a1-9c9c-e20c122e5310",
+          "title": "Using `require`",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Coupon Code :- SaleSeptember",
+              "fullTitle": "Using `require` Verify Coupon Code :- SaleSeptember",
+              "timedOut": null,
+              "duration": 19088,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/couponTest/CouponModuleTest.js/Using `require` -- Verify Coupon Code :- SaleSeptember (failed).png\"",
+              "code": "//visit Product page URL\ncy.visit(coupon.productPageURL); //Add the product to the cart\n_ProductDetailsPageTask.default.clickOnAddToCart; //verify the success message for Add to cart fuctionality\n_ProdcutDetailsPageVerification.default.verifyAddtoCartSuccessMessage(\"Product successfully added to cart\"); //verify view cart count \n\n_ProdcutDetailsPageVerification.default.verifyCartCount(\"1\"); //click on view cart link\n\n_ProductDetailsPageTask.default.clickOnViewCartLink(); //test for coupon code\n//add coupon code to Coupon/Referral Code textBox\n\n_ShoppingCartPageTask.default.addCouponCodeToCouponCodeBox(coupon.couponCode); //click apply button\n\n_ShoppingCartPageTask.default.clickOnApplyCouponCodeButton(); //verify success message in the Popup alert\n\n_ShoppingCartPageVerification.default.verifyCouponCodeSuccessMessagePopUP(coupon.verificationMessage); //verify success message displayed on the form\n\n_ShoppingCartPageVerification.default.verifySuccessCouponMessage(coupon.verificationMessage);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#ageConfirmationPopupCheckBox`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Using `require``",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#ageConfirmationPopupCheckBox`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Using `require``\n    at homePageObjects.acceptGrassdoorTermConditon (https://demo.grassdoor.com/__cypress/tests?p=cypress\\integration\\couponTest\\CouponModuleTest.js:247:8)\n    at Context.eval (https://demo.grassdoor.com/__cypress/tests?p=cypress\\integration\\couponTest\\CouponModuleTest.js:156:30)",
+                "diff": null
+              },
+              "uuid": "c611234d-ce52-42a0-9afe-5a77f2bad399",
+              "parentUUID": "0e1bb43f-4c1b-46a1-9c9c-e20c122e5310",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Coupon Code :- CashbackSeptember",
+              "fullTitle": "Using `require` Verify Coupon Code :- CashbackSeptember",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//visit Product page URL\ncy.visit(coupon.productPageURL); //Add the product to the cart\n_ProductDetailsPageTask.default.clickOnAddToCart; //verify the success message for Add to cart fuctionality\n_ProdcutDetailsPageVerification.default.verifyAddtoCartSuccessMessage(\"Product successfully added to cart\"); //verify view cart count \n\n_ProdcutDetailsPageVerification.default.verifyCartCount(\"1\"); //click on view cart link\n\n_ProductDetailsPageTask.default.clickOnViewCartLink(); //test for coupon code\n//add coupon code to Coupon/Referral Code textBox\n\n_ShoppingCartPageTask.default.addCouponCodeToCouponCodeBox(coupon.couponCode); //click apply button\n\n_ShoppingCartPageTask.default.clickOnApplyCouponCodeButton(); //verify success message in the Popup alert\n\n_ShoppingCartPageVerification.default.verifyCouponCodeSuccessMessagePopUP(coupon.verificationMessage); //verify success message displayed on the form\n\n_ShoppingCartPageVerification.default.verifySuccessCouponMessage(coupon.verificationMessage);",
+              "err": {},
+              "uuid": "f0901834-aba9-4e49-ace3-4950cbf48e7c",
+              "parentUUID": "0e1bb43f-4c1b-46a1-9c9c-e20c122e5310",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c611234d-ce52-42a0-9afe-5a77f2bad399"
+          ],
+          "pending": [],
+          "skipped": [
+            "f0901834-aba9-4e49-ace3-4950cbf48e7c"
+          ],
+          "duration": 19088,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

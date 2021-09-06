@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-09-06T06:51:22.406Z",
+    "end": "2021-09-06T06:52:08.011Z",
+    "duration": 45605,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b8f3e1f7-9ad8-48be-917a-c1c1a29729d1",
+      "title": "",
+      "fullFile": "cypress/integration/productDetailsTest/ProductDetailTest.js",
+      "file": "cypress/integration/productDetailsTest/ProductDetailTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "16b7e61d-a31c-43ff-b57d-5586a899f22f",
+          "title": "Verify Product Details Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify kickback Pack product Details",
+              "fullTitle": "Verify Product Details Page Verify kickback Pack product Details",
+              "timedOut": null,
+              "duration": 45531,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/productDetailsTest/ProductDetailTest.js/Verify Product Details Page -- Verify kickback Pack product Details (failed).png\"",
+              "code": "console.log('vithal');\ncy.log('vithal');\ncy.task('getFiles', '../../fixtures/productDetails').then(files => {\n  cy.log(files);\n});\ncy.log('vithal'); // const kickbackPackDetails = require('../../fixtures/productDetails/kickbackPack.json')\n// //visit kickbackPack product detail page\n// cy.visit(kickbackPackDetails.url)\n// //verify kickback Pack Details\n// productDetailPageVerification.verifyProductDetails(kickbackPackDetails)\n// //Add to cart multi quantity\n// productDetailPageTask.clickOnAddToCart()\n// //verify the success message for Add to cart fuctionality(Not able to view the message during test run)\n// productDetailPageVerification.verifyAddtoCartSuccessMessage(\"Product successfully added to cart\")\n// //verify view cart count \n// productDetailPageVerification.verifyCartCount(\"1\")\n// //click on view cart link\n// productDetailPageTask.clickOnViewCartLink()\n// //verify details on shoppingCart\n// shoppingCartPageVerification.verifyProductDetails(kickbackPackDetails.addToCartDetails)\n// //delete item from cart\n// shoppingCartPageTask.deleteProductFromCart()\n// //verify Empty shopping cart\n// shoppingCartPageVerification.verifyEmptyShoppingCart()",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<a.btn.btn-primary.h-login-btn.d-none.d-lg-inline-block>' to be 'visible'\n\nThis element `<a.btn.btn-primary.h-login-btn.d-none.d-lg-inline-block>` is not visible because it has CSS property: `position: fixed` and it's being covered by another element:\n\n`<div class=\"modal confirm d-block location-popup\" tabindex=\"-1\" role=\"dialog\">...</div>`\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Verify Product Details Page`",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<a.btn.btn-primary.h-login-btn.d-none.d-lg-inline-block>' to be 'visible'\n\nThis element `<a.btn.btn-primary.h-login-btn.d-none.d-lg-inline-block>` is not visible because it has CSS property: `position: fixed` and it's being covered by another element:\n\n`<div class=\"modal confirm d-block location-popup\" tabindex=\"-1\" role=\"dialog\">...</div>`\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Verify Product Details Page`\n    at homePageObjects.clickOnLoginButton (https://demo.grassdoor.com/__cypress/tests?p=cypress\\integration\\productDetailsTest\\ProductDetailTest.js:262:37)\n    at Context.eval (https://demo.grassdoor.com/__cypress/tests?p=cypress\\integration\\productDetailsTest\\ProductDetailTest.js:131:30)",
+                "diff": null
+              },
+              "uuid": "53d38ca1-1c57-41b3-90c3-772db16c940d",
+              "parentUUID": "16b7e61d-a31c-43ff-b57d-5586a899f22f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "53d38ca1-1c57-41b3-90c3-772db16c940d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 45531,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

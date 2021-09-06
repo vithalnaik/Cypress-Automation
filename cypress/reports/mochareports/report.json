@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-09-03T06:17:21.102Z",
+    "end": "2021-09-03T06:18:08.832Z",
+    "duration": 47657,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7163b4f3-0f41-460a-87c2-d8d1ab7af8df",
+      "title": "",
+      "fullFile": "cypress/integration/loginTest/LoginTest.js",
+      "file": "cypress/integration/loginTest/LoginTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ecf94c47-6513-49ad-8353-fb961f838b79",
+          "title": "Login scenarios",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login with valid credentials",
+              "fullTitle": "Login scenarios Login with valid credentials",
+              "timedOut": null,
+              "duration": 47657,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept('https://sdk.iad-03.braze.com/api/v3/template/', {\n  \"mock\": \"data\"\n}).as('brazeTemplate');\ncy.visit('/');\n_HomePageObjects.default.acceptGrassdoorTermConditon(); //handle pop up for location set up\n\n_HomePageObjects.default.fillUpLocationPopUP(\"Santa Monica Pier, Santa Monica Pier, Santa Monica, CA, USA\"); //valid login scenario\n//click on login button from homepage\n\n_HomePageObjects.default.clickOnLoginButton(); //verify Login Page\n\n_LoginPageVerirfication.default.verifyDetailsOnLoginpage(); //perform login operation\n\n_LoginPageObject.default.validLogin(this.userDetails.username, this.userDetails.password);\n_LoginPageVerirfication.default.verifySuccesfullLogin();",
+              "err": {},
+              "uuid": "30113875-34c2-4126-bf10-16a34443868c",
+              "parentUUID": "ecf94c47-6513-49ad-8353-fb961f838b79",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "30113875-34c2-4126-bf10-16a34443868c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 47657,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

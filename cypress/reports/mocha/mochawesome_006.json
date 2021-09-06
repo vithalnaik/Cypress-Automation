@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-09-06T06:57:28.824Z",
+    "end": "2021-09-06T06:57:29.060Z",
+    "duration": 236,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3e151895-bf8f-4e71-9f02-83aafd3346d0",
+      "title": "",
+      "fullFile": "cypress/integration/productDetailsTest/ProductDetailTest.js",
+      "file": "cypress/integration/productDetailsTest/ProductDetailTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c9afafd7-2842-4e83-aca9-cd29aa7b1422",
+          "title": "Verify Product Details Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify kickback Pack product Details",
+              "fullTitle": "Verify Product Details Page Verify kickback Pack product Details",
+              "timedOut": null,
+              "duration": 191,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/productDetailsTest/ProductDetailTest.js/Verify Product Details Page -- Verify kickback Pack product Details (failed).png\"",
+              "code": "console.log('vithal');\ncy.log('vithal');\ncy.task('getFiles', 'fixtures/productDetails').then(files => {\n  cy.log(files);\n});\ncy.log('vithal'); // const kickbackPackDetails = require('../../fixtures/productDetails/kickbackPack.json')\n// //visit kickbackPack product detail page\n// cy.visit(kickbackPackDetails.url)\n// //verify kickback Pack Details\n// productDetailPageVerification.verifyProductDetails(kickbackPackDetails)\n// //Add to cart multi quantity\n// productDetailPageTask.clickOnAddToCart()\n// //verify the success message for Add to cart fuctionality(Not able to view the message during test run)\n// productDetailPageVerification.verifyAddtoCartSuccessMessage(\"Product successfully added to cart\")\n// //verify view cart count \n// productDetailPageVerification.verifyCartCount(\"1\")\n// //click on view cart link\n// productDetailPageTask.clickOnViewCartLink()\n// //verify details on shoppingCart\n// shoppingCartPageVerification.verifyProductDetails(kickbackPackDetails.addToCartDetails)\n// //delete item from cart\n// shoppingCartPageTask.deleteProductFromCart()\n// //verify Empty shopping cart\n// shoppingCartPageVerification.verifyEmptyShoppingCart()",
+              "err": {
+                "message": "CypressError: `cy.task('getFiles')` failed with the following error:\n\n> ENOENT: no such file or directory, scandir 'D:\\Cypress\\fixtures\\productDetails'\n\nhttps://on.cypress.io/api/task",
+                "estack": "CypressError: `cy.task('getFiles')` failed with the following error:\n\n> ENOENT: no such file or directory, scandir 'D:\\Cypress\\fixtures\\productDetails'\n\nhttps://on.cypress.io/api/task\n    at https://demo.grassdoor.com/__cypress/runner/cypress_runner.js:146874:19\n    at tryCatcher (https://demo.grassdoor.com/__cypress/runner/cypress_runner.js:13222:23)\n    at Promise._settlePromiseFromHandler (https://demo.grassdoor.com/__cypress/runner/cypress_runner.js:11157:31)\n    at Promise._settlePromise (https://demo.grassdoor.com/__cypress/runner/cypress_runner.js:11214:18)\n    at Promise._settlePromise0 (https://demo.grassdoor.com/__cypress/runner/cypress_runner.js:11259:10)\n    at Promise._settlePromises (https://demo.grassdoor.com/__cypress/runner/cypress_runner.js:11335:18)\n    at _drainQueueStep (https://demo.grassdoor.com/__cypress/runner/cypress_runner.js:7929:12)\n    at _drainQueue (https://demo.grassdoor.com/__cypress/runner/cypress_runner.js:7922:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://demo.grassdoor.com/__cypress/runner/cypress_runner.js:7938:5)\n    at Async.drainQueues (https://demo.grassdoor.com/__cypress/runner/cypress_runner.js:7808:14)\nFrom Your Spec Code:\n    at Context.eval (https://demo.grassdoor.com/__cypress/tests?p=cypress\\integration\\productDetailsTest\\ProductDetailTest.js:138:8)\n\nFrom Node.js Internals:\n  Error: ENOENT: no such file or directory, scandir 'D:\\Cypress\\fixtures\\productDetails'",
+                "diff": null
+              },
+              "uuid": "4b0c2af2-bee2-4776-a67e-90711b4453a0",
+              "parentUUID": "c9afafd7-2842-4e83-aca9-cd29aa7b1422",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "4b0c2af2-bee2-4776-a67e-90711b4453a0"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 191,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

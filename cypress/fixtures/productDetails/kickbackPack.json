@@ -1,0 +1,23 @@
+{
+    "url":"/bundle/kickback-pack",
+    "productName": "Kickback Pack",
+    "imageSource": "https://dev-serverless.grassdoor.com/fit-in/600x600/filters:format(png)/all_products/original/70525ce6caac40b868d044a25f6125cb.jpg",
+    "imageAltTitle": "Grassdoor Bundle Exclusives Kickback Pack",
+    "discountPrice": "$110",
+    "actualPrice": "$160",
+    "background":[
+        "Start your session off with some sessionable strains - a mix of indica and sativa flower at an accessible potency - courtesy of Jelly and Humboldt Farms.",
+        "Biscotti - 22.8% THC - Humboldt Farms Hybrid 1/8th",
+        "Vanilla Frosting - 19% THC - Jelly Indica 1/8th",
+        "Orange Creamsicle - 24% THC - Humboldt Farms Sativa 1/8th",
+        "Wedding Crasher - 21% THC - Jelly Indica 1/8th"
+    ],
+    "warning": "WARNING : This product can expose you to chemicals, including Cannabis Smoke, which are known to the State of California to cause cancer and birth defects or other reproductive harm. For more information go to https://www.P65Warnings.ca.gov",
+    "addToCartDetails": {
+        "imageSource": "https://dev-serverless.grassdoor.com/fit-in/200x200/filters:format(png)/all_products/original/70525ce6caac40b868d044a25f6125cb.jpg",
+        "productName": "Kickback Pack",
+        "brandType": "Grassdoor Bundle Exclusives",
+        "discountedPrice": "$110",
+        "cartCount": 1
+    }
+}

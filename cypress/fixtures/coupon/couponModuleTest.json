@@ -1,0 +1,16 @@
+[
+    {
+        "couponCode": "SaleSeptember",
+        "verificationMessage": "Coupon code applied successfully. 30% off",
+        "productPageURL": "/product/ice-cream-cake-146",
+        "orderTotalBeforeCouponApplied": "41.54",
+        "orderTotalAfterCouponApplied": "30.86"
+    },
+    {
+        "couponCode": "CashbackSeptember",
+        "verificationMessage": "Coupon code applied successfully. 30% cashback",
+        "productPageURL": "/product/ice-cream-cake-146",
+        "orderTotalBeforeCouponApplied": "41.54",
+        "orderTotalAfterCouponApplied": "41.54"
+    }
+]

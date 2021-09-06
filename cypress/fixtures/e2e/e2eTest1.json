@@ -1,0 +1,67 @@
+{
+    "productName": "Kickback Pack",
+    "discountPrice": "$110",
+    "actualPrice": "$160",
+    "viewCartCount": "1",
+    "coupon": "SaleSeptember",
+    "addToCartDetails": {
+        "imageSource": "https://dev-serverless.grassdoor.com/fit-in/200x200/filters:format(png)/all_products/original/70525ce6caac40b868d044a25f6125cb.jpg",
+        "productName": "Kickback Pack",
+        "brandType": "Grassdoor Bundle Exclusives",
+        "discountedPrice": "$110",
+        "cartCount": 1
+    },
+    "shoppingCartDetails":{
+        "mobileNumber": "9545657649",
+        "name": "Kolvenkar",
+        "email": "kolvenkar1@gmail.com",
+        "deliveryAddress": "200 Santa Monica Pier, Santa Monica, CA 90401, USA",
+        "zipCode": "90401",
+        "deliverySpeed": "Scheduled",
+        "deliveryTime": "04:30 PM - 06:00 PM",
+        "paymentType": "Debit Card",
+        "DebitCardDetails":{
+            "debitcardNumber" : "4000056655665556",
+            "expiryDate" : "0923",
+            "cvvNumber" : "333",
+            "cardHolderName" : "Kolvenkar"
+        },
+        "tipToDriver":"$5",
+        "invoiceDetails": {
+            "subtotal" : "$160.00",
+            "bundleDiscount" : "(-) $50.00",
+            "netSubtotal" : "$110.00",
+            "totalTaxesAndFees" : " $42.61",
+            "HealthIssuranceFee": "$5.60",
+            "debitCardTransactionFee": "(+) $3.00",
+            "stateCannabisExciseTax": "$24.00",
+            "localCannabisBusinessTax": "$7.13",
+            "localSalesTax": "$14.22",
+            "totalAllFeesIncluded": "$152.61",
+            "creditBalanceUsed": "(-) $5.00",
+            "tip": " (+) $5.00",
+            "totalAmountPayable": "$152.61"
+        },
+        "billingZipCode": "90401"
+    },
+    "orderDetail":{
+        "total" : "$157.61",
+        "dueOnDelivery": "$0.00",
+        "debitCardPaid": "$152.61",
+        "walletAmountUsed": "$5.00",
+        "customerID": "108323",
+        "customerName": "Kolvenkar",
+        "customerAddress": "200 Santa Monica Pier, Santa Monica, CA 90401, USA",
+        "orderSchedule": "This order is scheduled for delivery at 04:30 PM - 06:00 PM on 2021-09-07",
+        "productImageSrc": "https://dev-serverless.grassdoor.com/fit-in/200x200/filters:format(png)/all_products/original/70525ce6caac40b868d044a25f6125cb.jpg",
+        "productNameCount":"1 x Kickback Pack",
+        "subtotal" : "$160.00",
+        "bundleDiscount" : "(-) $50.00",
+        "netSubtotal" : "$110.00",
+        "totalTaxesAndFees" : " $42.61",
+        "totalAllFeesIncluded": "$152.61",
+        "creditBalanceUsed": "(-) $5.00",
+        "tip": "(+) $5.00",
+        "totalAmountPayable": "$152.61"
+    }
+}

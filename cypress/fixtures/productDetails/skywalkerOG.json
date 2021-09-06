@@ -1,0 +1,29 @@
+{
+    "brand": "STIIIZY",
+    "brandURL": "/brands/stiiizy",
+    "url":"/product/skywalker-og",
+    "productName": "Skywalker OG",
+    "imageSource": "https://dev-serverless.grassdoor.com/fit-in/600x600/filters:format(png)/all_products/original/5f4aef76c7c44be9ac2ccc83781fad80.jpg",
+    "imageAltTitle": "STIIIZY Pods Skywalker OG Pod by STIIIIZY on Grassdoor",
+    "weight": "0.5grams",
+    "THC": "85-88%",
+    "THC_dollar": "14.7mg - 15.2mg",
+    "Strain": "Indica",
+    "actualPrice": "$29",
+    "background":[
+        "Skywalker OG is a heavy-hitting indica with notes of citrus and hops, created from a combination of Mazar and Blueberry OG.",
+        "Vape to a galaxy far, far away with STIIIZY’s Skywalker OG Pod. Ripe with pungent, earthy flavors, this Pod provides users with spacey relaxation, where stress and discomfort become a thing of the past. And thanks to STIIIZY’s solvent-free distillation processes, you can rest assured you’re consuming some of the highest quality cannabis in the universe.",
+        "Flavor and Aroma: Spicy, Diesel, Pine",
+        "Effects: Euphoric, Sleepy",
+        "Compatible with all STIIIZY brand batteries and devices"
+    ],
+    "warning": "WARNING : This product can expose you to chemicals, including Cannabis Smoke, which are known to the State of California to cause cancer and birth defects or other reproductive harm. For more information go to https://www.P65Warnings.ca.gov",
+    "addToCartDetails": {
+        "imageSource": "https://dev-serverless.grassdoor.com/fit-in/200x200/filters:format(png)/all_products/original/5f4aef76c7c44be9ac2ccc83781fad80.jpg",
+        "productName": "Skywalker OG",
+        "brandType": "STIIIZY Pods",
+        "weight": "0.5grams",
+        "actualPrice": "$29",
+        "cartCount": 1
+    }
+}

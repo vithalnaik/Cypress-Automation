@@ -1,0 +1,42 @@
+{
+    "brand": "Humboldt Farms",
+    "brandURL": "/brands/humboldt-farms",
+    "url":"product/ice-cream-cake-1664",
+    "productName": "Ice Cream Cake",
+    "imageSource": "https://dev-serverless.grassdoor.com/fit-in/600x600/filters:format(png)/all_products/original/21405658b7af44135fe1fe3abcd583cd.jpg",
+    "imageAltTitle": "Indica 1/8 Ounce Flower Ice Cream Cake by Humboldt Farms",
+    "weight": "3.5grams",
+    "THC": "24-26%",
+    "THC_dollar": "24.0mg - 26.0mg",
+    "Strain": "Indica",
+    "volume_pricing_table": {
+        "unit": [ "1",
+            "2",
+            "3",
+            "4+"
+        ],
+        "weight": [ "1 x 3.5grams",
+                    "2 x 3.5grams",
+                    "3 x 3.5grams",
+                    "4 x 3.5grams"
+                ],
+        "pricePerUnit": [ "$35.00",
+            "$30.00",
+            "$26.67",
+            "$25.00"
+        ]
+    },
+    "background":[
+        "Ice Cream Cake by Humboldt Farms"
+    ],
+    "warning": "WARNING : This product can expose you to chemicals, including Cannabis Smoke, which are known to the State of California to cause cancer and birth defects or other reproductive harm. For more information go to https://www.P65Warnings.ca.gov",
+    "addToCartMultiQuantity": "1",
+    "addToCartDetails": {
+        "imageSource": "https://dev-serverless.grassdoor.com/fit-in/200x200/filters:format(png)/all_products/original/21405658b7af44135fe1fe3abcd583cd.jpg",
+        "productName": "Ice Cream Cake",
+        "brandType": "Indica 1/8 Ounce Flower",
+        "weight": "3.5grams",
+        "actualPrice": "$35",
+        "cartCount": 1
+    }
+}

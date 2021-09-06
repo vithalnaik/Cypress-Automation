@@ -1,0 +1,134 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-09-04T19:46:31.982Z",
+    "end": "2021-09-04T19:48:34.232Z",
+    "duration": 122250,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4b0be905-64aa-4c01-9c6a-fc677ab1273d",
+      "title": "",
+      "fullFile": "cypress/integration/couponTest/CouponModuleTest.js",
+      "file": "cypress/integration/couponTest/CouponModuleTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "00dfd1ef-2779-4f69-8525-3cdd7af03e35",
+          "title": "Coupon test scenarios",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Coupon Code :- SaleSeptember",
+              "fullTitle": "Coupon test scenarios Verify Coupon Code :- SaleSeptember",
+              "timedOut": null,
+              "duration": 50392,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/couponTest/CouponModuleTest.js/Coupon test scenarios -- Verify Coupon Code :- SaleSeptember (failed).png\"",
+              "code": "//visit Product page URL\ncy.visit(coupon.productPageURL); //Add the product to the cart\n_ProductDetailsPageTask.default.clickOnAddToCart; //verify the success message for Add to cart fuctionality\n_ProdcutDetailsPageVerification.default.verifyAddtoCartSuccessMessage(\"Product successfully added to cart\"); //verify view cart count \n\n_ProdcutDetailsPageVerification.default.verifyCartCount(\"1\"); //click on view cart link\n\n_ProductDetailsPageTask.default.clickOnViewCartLink(); //test for coupon code\n//add coupon code to Coupon/Referral Code textBox\n\n_ShoppingCartPageTask.default.addCouponCodeToCouponCodeBox(coupon.couponCode); //click apply button\n\n_ShoppingCartPageTask.default.clickOnApplyCouponCodeButton(); //verify success message in the Popup alert\n\n_ShoppingCartPageVerification.default.verifyCouponCodeSuccessMessagePopUP(coupon.verificationMessage); //verify success message displayed on the form\n\n_ShoppingCartPageVerification.default.verifySuccessCouponMessage(coupon.verificationMessage);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//div[contains(text(),'Product successfully added to cart')]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//div[contains(text(),'Product successfully added to cart')]`, but never found it.\n    at ProductDetailsPageVerification.verifyAddtoCartSuccessMessage (https://demo.grassdoor.com/__cypress/tests?p=cypress\\integration\\couponTest\\CouponModuleTest.js:441:74)\n    at Context.eval (https://demo.grassdoor.com/__cypress/tests?p=cypress\\integration\\couponTest\\CouponModuleTest.js:180:47)",
+                "diff": null
+              },
+              "uuid": "e49fc58b-442c-4960-b4fd-772fc0b4b904",
+              "parentUUID": "00dfd1ef-2779-4f69-8525-3cdd7af03e35",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Coupon Code :- CashbackSeptember",
+              "fullTitle": "Coupon test scenarios Verify Coupon Code :- CashbackSeptember",
+              "timedOut": null,
+              "duration": 71626,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/couponTest/CouponModuleTest.js/Coupon test scenarios -- Verify Coupon Code :- CashbackSeptember (failed).png\"",
+              "code": "//visit Product page URL\ncy.visit(coupon.productPageURL); //Add the product to the cart\n_ProductDetailsPageTask.default.clickOnAddToCart; //verify the success message for Add to cart fuctionality\n_ProdcutDetailsPageVerification.default.verifyAddtoCartSuccessMessage(\"Product successfully added to cart\"); //verify view cart count \n\n_ProdcutDetailsPageVerification.default.verifyCartCount(\"1\"); //click on view cart link\n\n_ProductDetailsPageTask.default.clickOnViewCartLink(); //test for coupon code\n//add coupon code to Coupon/Referral Code textBox\n\n_ShoppingCartPageTask.default.addCouponCodeToCouponCodeBox(coupon.couponCode); //click apply button\n\n_ShoppingCartPageTask.default.clickOnApplyCouponCodeButton(); //verify success message in the Popup alert\n\n_ShoppingCartPageVerification.default.verifyCouponCodeSuccessMessagePopUP(coupon.verificationMessage); //verify success message displayed on the form\n\n_ShoppingCartPageVerification.default.verifySuccessCouponMessage(coupon.verificationMessage);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//div[contains(text(),'Product successfully added to cart')]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//div[contains(text(),'Product successfully added to cart')]`, but never found it.\n    at ProductDetailsPageVerification.verifyAddtoCartSuccessMessage (https://demo.grassdoor.com/__cypress/tests?p=cypress\\integration\\couponTest\\CouponModuleTest.js:441:74)\n    at Context.eval (https://demo.grassdoor.com/__cypress/tests?p=cypress\\integration\\couponTest\\CouponModuleTest.js:180:47)",
+                "diff": null
+              },
+              "uuid": "399f19a7-7013-4a37-abb4-a56a6f7e625a",
+              "parentUUID": "00dfd1ef-2779-4f69-8525-3cdd7af03e35",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "e49fc58b-442c-4960-b4fd-772fc0b4b904",
+            "399f19a7-7013-4a37-abb4-a56a6f7e625a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 122018,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
