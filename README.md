@@ -4,14 +4,18 @@
 #Framework folder structure
 ##Integration folder 
 - Will have all the Test
+
 ##Pages
 -Basically design for page objet model view
 -Will need to created seperate package based on the Page name
 -Will have 3 different files
+
 ###PageObjects 
 -Will have all the page elements store as object so that we can use or call them wherever require
+
 ###PageTask
 -Will have all the task that we perform on that particular page
+
 ##PageVerification
 -Will have all the verification function that need to be perform on that page
 
