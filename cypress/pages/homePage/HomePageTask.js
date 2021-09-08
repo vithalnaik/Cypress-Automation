@@ -11,29 +11,36 @@ class HomePageTask{
     //Accept grassdoor term and condition from popup
     acceptGrassdoorTermConditon(){
         cy.get(homePage.termConditionAcceptCheckbox).click({ force: true })
+        cy.log('Clicked on I am above 18 check box')
+
         cy.get(homePage.termsConditionAcceptButton).click({force: true})
+        cy.log('Clicked on Accept Button')
     }
 
     //click on loginbutton from homepage
     clickOnLoginButton(){
         cy.xpath(homePage.loginButtonXpath).should('be.visible').click();
+        cy.log('Clicked on Login button')
     }
 
     //click on Schedule Menu
     clickOnScheduleMenuLink(){
         cy.xpath(homePage.scheduleMenuLink).click()
+        cy.log('Clicked on Schedule Menu link from Homepage')
     }
 
     //add product to the cart
     addElementToCart(productName){
         cy.wait(5000)
         cy.scrollTo(0, 500)
-        cy.xpath("//p[text() = '"+ productName + "']/parent::a/parent::div/parent::div/parent::div/following-sibling::div/button").click()
+        cy.xpath("//span[text() = '"+ productName + "']/parent::a/parent::div/parent::div/parent::div/parent::div/following-sibling::div/button").click()
+        cy.log('Add the product to the cart ' + productName)
     }
 
     clickOnViewCartLink(){
         //click on view cart link
         cy.xpath(homePage.cartButton).should('be.visible').click()
+        cy.log('Clicked on View Cart link form Homepage')
     }
 }
 

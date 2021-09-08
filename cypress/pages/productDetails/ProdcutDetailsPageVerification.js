@@ -8,37 +8,44 @@ class ProductDetailsPageVerification{
     verifyCartCount(count){
         //verify number of cart Item count on View Cart Link
         cy.xpath(productDetailPageObjects.verifyCartCount).should('have.text', count)
+        cy.log('verified cart items count on Product details page')
     }
 
     verifyAddtoCartSuccessMessage(message){
         //verify add to cart success message
         cy.xpath(productDetailPageObjects.addToCardSuccessMessage).should('be.visible').should('have.text',message).click()
+        cy.log('verified successful add to cart message :- ' + message)
     }
 
     verifyPageURL(url){
         //verify page URL
         cy.url().should('include', url)
+        cy.log('verified page URL :- ' + url)
     }
 
     verifyProcuctName(productName){
         //verify Product Name
         cy.xpath(productDetailPageObjects.productName).should('be.visible').should('have.text', productName)
+        cy.log('verified product name :- ' + productName)
     }
 
     verifyProductImageWithAltName(img, altName){
         //verify Product Image and Alt name
         cy.xpath(productDetailPageObjects.productImage)
         .should('have.attr', 'src', img).should('have.attr','alt',altName)
+        cy.log('verified product image on Product detail page')
     }
 
     verifyDiscountedPrice(discountedPrice){
         //verify Discounted price
         cy.xpath(productDetailPageObjects.discountedPrice).should('be.visible').and('have.text',discountedPrice)
+        cy.log('verified Discounted price :- ' + discountedPrice)
     }
 
     verifyActualPrice(actualPrice){
         //verify actual price
         cy.xpath(productDetailPageObjects.actualPrice).should('be.visible').contains(actualPrice)
+        cy.log('verified actual price :- ' + actualPrice)
     }
 
     verifyBackGroundDetails(backgroundDetails){
@@ -48,41 +55,49 @@ class ProductDetailsPageVerification{
         backgroundDetails.forEach((backgroundDetail) => {
             cy.xpath(productDetailPageObjects.backgroundDetailsBlock).contains(backgroundDetail);
         })
+        cy.log('verified background details of the Product')
     }
 
     verifyWarningMessage(warningMessage){
         //verify warning meesage
         cy.xpath(productDetailPageObjects.warningMessage).should('be.visible').and('have.text', warningMessage)
+        cy.log('verified warning meesage :- ' + warningMessage)
     }
 
     //verify brand of the product
     verifyBrandName(brandName){
         cy.xpath(productDetailPageObjects.brandName).should('be.visible').and('have.text', brandName)
+        cy.log('verified brandName :- ' + brandName)
     }
 
     //verify brand URL of the product
     verifyBrandURL(url){
         cy.xpath(productDetailPageObjects.brandURL).should('be.visible').and('have.attr','href', url)
+        cy.log('verified brand URL of the product :- ' + url)
     }
 
     //verify weight of the product
     verifyWeight(weight){
         cy.xpath(productDetailPageObjects.weight).should('be.visible').and('have.text', weight)
+        cy.log('verified weight of the product :- ' + weight)
     }
 
     //verify THC of the product
     verifyTHC(THC){
         cy.xpath(productDetailPageObjects.THC).should('be.visible').and('have.text', THC)
+        cy.log('verified THC of the product :- ' + THC)
     }
 
     //verify THC/dollar of the product
     verifyTHCdollar(THC_dollar){
         cy.xpath(productDetailPageObjects.THC_dollar).should('be.visible').and('have.text', THC_dollar)
+        cy.log('verified THC dollar of the product :- ' + THC_dollar)
     }
 
     //verify Strain of the product
     verifyStrain(strain){
         cy.xpath(productDetailPageObjects.strain).should('be.visible').and('have.text', strain)
+        cy.log('verified Strain of the product :- ' + strain)
     }
 
 
@@ -108,6 +123,8 @@ class ProductDetailsPageVerification{
             //verify pricing per Units
             cy.xpath("//table[@class='table']/tbody/tr[" + i + "]/td[3]/child::span[@class='text-primary']").should('be.visible').should('have.text', volumePricingTable.pricePerUnit[i-1])
           }
+
+          cy.log('verified Volume pricing details of the product')
 
     }
 

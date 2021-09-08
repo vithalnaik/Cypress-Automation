@@ -12,8 +12,10 @@ describe('Login scenarios', () =>{
         //Handle unwanted popups
         cy.intercept('https://sdk.iad-03.braze.com/api/v3/template/', { "mock": "data"
         }).as('brazeTemplate')
+        cy.log('Handle unwanted popups')
 
         cy.visit('/')
+        cy.log('visit default URL')
         //accept grassdoor age limit term and condition
         homePageTask.acceptGrassdoorTermConditon()
 
